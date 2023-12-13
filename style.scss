@@ -1,0 +1,45 @@
+@import 'reset';
+@mixin media($screen){
+    @media(max-width:$screen){ 
+        @content;
+    }
+}
+
+$mobile:"475px";
+$color-one: hsla(44, 100%, 84%, 0.86);
+$color-box: rgba(255, 255, 255, 1);
+
+
+
+
+.container {
+    background-color: $color-one;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    @include media($mobile){
+        justify-content: center;
+    }
+    
+}
+.mainsection {
+    background-color: $color-box;
+    width: 350px;
+    height: 480px;
+    border-top-right-radius: 20%;
+    border-bottom-left-radius: 20%;
+    margin-bottom: 30px;
+    
+
+}
+
+
+.imgclass {
+    max-width: 350px;
+    width: 100%;
+    max-height: 240px;
+    height: 100%;
+    border-top-right-radius: 20%;
+    border-bottom-left-radius: 20%;
+}
