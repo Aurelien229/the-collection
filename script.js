@@ -1,6 +1,6 @@
 const collection = [
     {
-        picture:"asset/img/lord1.jpg",
+        picture:"asset/img/lord1.jpg", 
         name: "La Communauté de l'anneau",
         director: "Peter Jackson",
         releaseYear: 2001,
@@ -137,6 +137,11 @@ document.addEventListener('DOMContentLoaded', function() {
     title.classList.add('title');
     header.appendChild(title);
     title.innerText = "best films de tout les temps.";
+
+    let slogan =document.createElement('h2');
+    slogan.classList.add('slogan');
+    header.appendChild(slogan);
+    slogan.innerText = "selon moi!!!"
    
 
     let main = document.createElement('main');
@@ -184,3 +189,8 @@ for (i =0; i < collection.length; i++){
     
     main.appendChild(section);
     }});
+
+
+
+
+    

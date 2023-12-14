@@ -7,19 +7,21 @@
 
 $mobile:"475px";
 $color-one: hsla(44, 100%, 84%, 0.86);
-$color-box: rgba(255, 255, 255, 1);
 $color-text: hsla(360, 100%, 24%, 0.97);
+$color-shadow: hsla(38, 100%, 21%, 0.68);
 $font-family: 'Whisper', cursive;
 
 
-body {background-color: $color-text;
+body {background-color: rgb(32, 32, 32);
 }
 header {
     font-family: $font-family;
+    background-image: url(asset/img/texture2.jpg);
     color: $color-one;
     text-align: center;
     font-size: 400%;
-    margin-top: 30px;
+    padding-top: 30px;
+    text-shadow: -10px 5px 5px red;
 }
 main {
     display: flex;
@@ -50,19 +52,32 @@ main {
     height: 100%;
     border-top-right-radius: 20%;
     border-bottom-left-radius: 20%;
+    box-shadow: -10px 5px 5px $color-shadow;
+    animation: 2s ease-in-out;
+    
+     &:hover{
+        transform: scale(1.1);
+        box-shadow: -10px 5px 5px red;
+        color: #111;
+            background: rgb(218, 216, 99);
+            box-shadow: 0 0 100px rgb(255, 217, 47);
+     }
 }
 h2{
     font-family: $font-family;
     text-align: center;
     color: $color-text;
-    padding-top: 3px;
-    padding-bottom: 3px;
+    padding-top: 6px;
+    padding-bottom: 6px;
     font-size: 250%;
+    font-weight: bold;
+    
 }
 h3 {
     font-family: $font-family;
     font-size: 200%;
     color: $color-text;
+    
 
 
 }
@@ -71,16 +86,17 @@ h4 {
     font-size: 200%;
     text-align: end;
     color: $color-one;
-    background-color: $color-text;
+    background-color: rgb(32, 32, 32);;
     padding-right: 12%;
     border-bottom-left-radius: 150%;
     border-top-left-radius: 150%;
+    font-weight: bold;
 }
 div {
     font-family: $font-family;
     font-size: 150%;
     color: $color-text;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
 
 }
 p {

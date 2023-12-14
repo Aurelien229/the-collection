@@ -49,15 +49,17 @@ table {
 }
 
 body {
-  background-color: hsla(0, 100%, 24%, 0.97);
+  background-color: rgb(32, 32, 32);
 }
 
 header {
   font-family: "Whisper", cursive;
+  background-image: url(asset/img/texture2.jpg);
   color: hsla(44, 100%, 84%, 0.86);
   text-align: center;
   font-size: 400%;
-  margin-top: 30px;
+  padding-top: 30px;
+  text-shadow: -10px 5px 5px red;
 }
 
 main {
@@ -90,15 +92,25 @@ main {
   height: 100%;
   border-top-right-radius: 20%;
   border-bottom-left-radius: 20%;
+  box-shadow: -10px 5px 5px hsla(38, 100%, 21%, 0.68);
+  animation: 2s ease-in-out;
+}
+.imgclass:hover {
+  transform: scale(1.1);
+  box-shadow: -10px 5px 5px red;
+  color: #111;
+  background: rgb(218, 216, 99);
+  box-shadow: 0 0 100px rgb(255, 217, 47);
 }
 
 h2 {
   font-family: "Whisper", cursive;
   text-align: center;
   color: hsla(0, 100%, 24%, 0.97);
-  padding-top: 3px;
-  padding-bottom: 3px;
+  padding-top: 6px;
+  padding-bottom: 6px;
   font-size: 250%;
+  font-weight: bold;
 }
 
 h3 {
@@ -112,17 +124,18 @@ h4 {
   font-size: 200%;
   text-align: end;
   color: hsla(44, 100%, 84%, 0.86);
-  background-color: hsla(0, 100%, 24%, 0.97);
+  background-color: rgb(32, 32, 32);
   padding-right: 12%;
   border-bottom-left-radius: 150%;
   border-top-left-radius: 150%;
+  font-weight: bold;
 }
 
 div {
   font-family: "Whisper", cursive;
   font-size: 150%;
   color: hsla(0, 100%, 24%, 0.97);
-  padding-bottom: 30px;
+  padding-bottom: 20px;
 }
 
 p {
