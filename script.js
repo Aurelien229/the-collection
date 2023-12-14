@@ -124,12 +124,30 @@ const collection = [
         ],
     },
 ]
+
+
+
+
 document.addEventListener('DOMContentLoaded', function() {
-    
+     let header = document.createElement('header');
+    header.classList.add('header');
+    document.body.prepend(header);
 
+    let title = document.createElement('h1');
+    title.classList.add('title');
+    header.appendChild(title);
+    title.innerText = "best films de tout les temps.";
+   
+
+    let main = document.createElement('main');
+    main.classList.add('main');
+    document.body.prepend(main);
     let body = document.querySelector('body');
-    body.classList.add('container');
+    
+    let content = document.createElement('content');
+    content.classList.add('content');
 
+    document.body.insertBefore(header, main);
 
 for (i =0; i < collection.length; i++){
     let stockCollection = collection[i];
@@ -164,5 +182,5 @@ for (i =0; i < collection.length; i++){
     section.appendChild(gender);
     section.appendChild(paragraphe);
     
-    document.body.appendChild(section);
+    main.appendChild(section);
     }});

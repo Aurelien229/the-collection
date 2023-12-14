@@ -8,30 +8,38 @@
 $mobile:"475px";
 $color-one: hsla(44, 100%, 84%, 0.86);
 $color-box: rgba(255, 255, 255, 1);
+$color-text: hsla(360, 100%, 24%, 0.97);
+$font-family: 'Whisper', cursive;
 
 
-
-
-.container {
-    background-color: $color-one;
+body {background-color: $color-text;
+}
+header {
+    font-family: $font-family;
+    color: $color-one;
+    text-align: center;
+    font-size: 400%;
+    margin-top: 30px;
+}
+main {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin: 20px;
     @include media($mobile){
         justify-content: center;
     }
     
 }
 .mainsection {
-    background-color: $color-box;
-    width: 350px;
+    background-color: $color-one;
+    width: 320px;
     height: 480px;
     border-top-right-radius: 20%;
     border-bottom-left-radius: 20%;
     margin-bottom: 30px;
-    
-
+    padding-left: 2%;
 }
 
 
@@ -42,4 +50,42 @@ $color-box: rgba(255, 255, 255, 1);
     height: 100%;
     border-top-right-radius: 20%;
     border-bottom-left-radius: 20%;
+}
+h2{
+    font-family: $font-family;
+    text-align: center;
+    color: $color-text;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    font-size: 250%;
+}
+h3 {
+    font-family: $font-family;
+    font-size: 200%;
+    color: $color-text;
+
+
+}
+h4 {
+    font-family: $font-family;
+    font-size: 200%;
+    text-align: end;
+    color: $color-one;
+    background-color: $color-text;
+    padding-right: 12%;
+    border-bottom-left-radius: 150%;
+    border-top-left-radius: 150%;
+}
+div {
+    font-family: $font-family;
+    font-size: 150%;
+    color: $color-text;
+    padding-bottom: 30px;
+
+}
+p {
+    font-family: $font-family;
+    font-size: 110%;
+    color: $color-text;
+    text-align: center;
 }

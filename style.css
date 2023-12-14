@@ -48,26 +48,39 @@ table {
   border-spacing: 0;
 }
 
-.container {
-  background-color: hsla(44, 100%, 84%, 0.86);
+body {
+  background-color: hsla(0, 100%, 24%, 0.97);
+}
+
+header {
+  font-family: "Whisper", cursive;
+  color: hsla(44, 100%, 84%, 0.86);
+  text-align: center;
+  font-size: 400%;
+  margin-top: 30px;
+}
+
+main {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin: 20px;
 }
 @media (max-width: 475px) {
-  .container {
+  main {
     justify-content: center;
   }
 }
 
 .mainsection {
-  background-color: rgb(255, 255, 255);
-  width: 350px;
+  background-color: hsla(44, 100%, 84%, 0.86);
+  width: 320px;
   height: 480px;
   border-top-right-radius: 20%;
   border-bottom-left-radius: 20%;
   margin-bottom: 30px;
+  padding-left: 2%;
 }
 
 .imgclass {
@@ -77,4 +90,44 @@ table {
   height: 100%;
   border-top-right-radius: 20%;
   border-bottom-left-radius: 20%;
+}
+
+h2 {
+  font-family: "Whisper", cursive;
+  text-align: center;
+  color: hsla(0, 100%, 24%, 0.97);
+  padding-top: 3px;
+  padding-bottom: 3px;
+  font-size: 250%;
+}
+
+h3 {
+  font-family: "Whisper", cursive;
+  font-size: 200%;
+  color: hsla(0, 100%, 24%, 0.97);
+}
+
+h4 {
+  font-family: "Whisper", cursive;
+  font-size: 200%;
+  text-align: end;
+  color: hsla(44, 100%, 84%, 0.86);
+  background-color: hsla(0, 100%, 24%, 0.97);
+  padding-right: 12%;
+  border-bottom-left-radius: 150%;
+  border-top-left-radius: 150%;
+}
+
+div {
+  font-family: "Whisper", cursive;
+  font-size: 150%;
+  color: hsla(0, 100%, 24%, 0.97);
+  padding-bottom: 30px;
+}
+
+p {
+  font-family: "Whisper", cursive;
+  font-size: 110%;
+  color: hsla(0, 100%, 24%, 0.97);
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */
